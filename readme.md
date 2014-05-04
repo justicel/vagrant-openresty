@@ -3,6 +3,7 @@
 ```sh
 vagrant ssh
 
+cd /vagrant
 mkdir project
 cd project
 lapis new --tup --git
@@ -22,9 +23,12 @@ CONFIG
 
 tup init
 tup
+moonc -w *.moon &
 lapis server development
 ```
 
 Visit `http://localhost:8888` and see `Welcome to Lapis 0.0.10!`.
 
-More information https://www.youtube.com/watch?v=Eo67iTY1Yf8://www.youtube.com/watch?v=Eo67iTY1Yf8
+More information:
+
+https://www.youtube.com/watch?v=Eo67iTY1Yf8
