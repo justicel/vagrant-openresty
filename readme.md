@@ -22,8 +22,7 @@ config "production", ->
 CONFIG
 
 tup init
-tup
-moonc -w *.moon &
+tup monitor -a
 lapis server development
 ```
 
